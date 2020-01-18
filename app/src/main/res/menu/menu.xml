@@ -6,5 +6,8 @@
     <item
         android:id="@+id/menuCiekawostki"
         android:title="Ciekawostki" />
+    <item
+        android:id="@+id/menuKalkulator"
+        android:title="Kalkulator" />
 
 </menu>

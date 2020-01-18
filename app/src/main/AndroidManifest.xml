@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ciekawostki"></activity>
+        <activity android:name=".Kalkulator"></activity>
+        <activity android:name=".Ciekawostki" />
         <activity android:name=".Zgadywanka" />
         <activity android:name=".MainActivity">
             <intent-filter>

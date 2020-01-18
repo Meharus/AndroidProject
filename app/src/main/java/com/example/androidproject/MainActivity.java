@@ -1,13 +1,12 @@
 package com.example.androidproject;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menuCiekawostki:
                 startActivity(new Intent(MainActivity.this, Ciekawostki.class));
                 return true;
+            case R.id.menuKalkulator:
+                startActivity(new Intent(MainActivity.this, Kalkulator.class));
+                return true;
+                default:
+
         }
         return true;
     }

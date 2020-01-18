@@ -4,6 +4,9 @@
 >Powstała na potrzeby przedmiotu 
 >"Zaawansowane projektowanie aplikacji mobilnych"
 
+### Aplikacja została zrobiona przy użyciu:
+- Emulatora Pixel XL API 23
+
 # Opis:
 
 ## 1. MENU
@@ -59,7 +62,6 @@ public class Zgadywanka extends AppCompatActivity {
     TextView results;
     SeekBar seekBar;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,11 +78,8 @@ public class Zgadywanka extends AppCompatActivity {
                 Random random = new Random();
                 int value = random.nextInt(seekBar.getProgress());
                 results.setText(""+ value);
-
             }
         });
-
-
     }
 }
 ```
@@ -132,7 +131,7 @@ public class Ciekawostki extends AppCompatActivity {
                 showRandomFact();
             }
         });
-
+        
     }
     public void showRandomFact(){
         shuffleFacts();
@@ -140,9 +139,7 @@ public class Ciekawostki extends AppCompatActivity {
         mTextView.setText(factArray[0].getmFact());
 
     }
-
-
-
+    
         Facts f01 = new Facts(R.drawable.amg, "Firma od 2005 roku należąca w całości do grupy Daimler AG, zajmująca się produkcją samochodów sportowych. Siedziba mieści się w Affalterbach, niedaleko Stuttgartu w Niemczech. Roczna sprzedaż (2015) wynosi 70 000 pojazdów");
         Facts f02 = new Facts(R.drawable.auto, "Koenigsegg Agera RS. Najszybszy seryjny samochód na świecie. Podczas przejazdów osiągnięto maksymalnie 457,9 km/h. Silnik: V8, 5,0 l, 1115 KM. V-max: 457,2 km/h ");
         Facts f03 = new Facts(R.drawable.drzwi, "Mercedes-Benz SLS. Ma najbardziej kontrowersyjne drzwi na świecie");
@@ -158,8 +155,6 @@ public class Ciekawostki extends AppCompatActivity {
 
     public void shuffleFacts(){
         Collections.shuffle(Arrays.asList(factArray));
-
-
     }
 }
 ```
@@ -172,7 +167,6 @@ KOD:
 package com.example.androidproject;
 
 public class Facts {
-
 
     private int mImage;
     private String mFact;
@@ -219,8 +213,7 @@ public class Kalkulator extends AppCompatActivity {
         setContentView(R.layout.activity_kalkulator);
     }
     public void KMCount (View view){
-
-
+    
         TextView x = findViewById(R.id.KWeditText);
         TextView result = findViewById(R.id.textViewResult);
         result.setText(" ");
@@ -229,6 +222,5 @@ public class Kalkulator extends AppCompatActivity {
         result.setText("Samochód ma:"+ wynik + "Koni Mechanicznych" );
     }
 }
-
 ```
 Dziekuję za uwagę ;) 

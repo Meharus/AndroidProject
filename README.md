@@ -17,7 +17,7 @@ Mamy 3 zakładki:
 - Zgadywanka
 - Kalkulator
  
--KOD:
+- KOD:
 ```sh
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
@@ -42,7 +42,7 @@ Mamy 3 zakładki:
 >Klikając guzik losuje nam cyfrę z przedziału, 
 >który zaznaczyliśmy.
 
--KOD:
+- KOD:
 ```sh
 package com.example.androidproject;
 
@@ -90,7 +90,7 @@ public class Zgadywanka extends AppCompatActivity {
 >które zostały dodane do tablicy. 
 >Używa clasy Facts.
 
--KOD:
+- KOD:
 ```sh
 package com.example.androidproject;
 
@@ -162,7 +162,7 @@ public class Ciekawostki extends AppCompatActivity {
 >treścią ciekawostki 
 >dodana jest clasa Facts.
 
--KOD:
+- KOD:
 ```sh
 package com.example.androidproject;
 
@@ -192,7 +192,7 @@ public class Facts {
 >Kilowaty (kW) na Konie Mechaniczne (KM).
 
 
--KOD:
+- KOD:
 
 ```sh
 package com.example.androidproject;
